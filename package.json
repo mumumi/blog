@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "",
+    "author": "mumumi",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mumumi/blog"
+    },
+    "scripts": {
+        "build": "vuepress build src",
+        "dev": "vuepress dev src",
+        "ins": "yarn add vuepress@next vuepress-theme-meteorlxy@next -S",
+        "clear": "rimraf node_modules",
+        "deploy": "yarn build && powershell .\\deploy.ps1"
+    },
+    "keywords": [],
+    "license": "MIT",
+    "dependencies": {
+        "@vuepress/plugin-pwa": "^1.0.0-alpha.0",
+        "vuepress": "^1.0.0-alpha.37",
+        "vuepress-theme-meteorlxy": "^1.0.0-alpha.11"
+    }
+}
